@@ -1,0 +1,46 @@
+body header {
+  min-height: 620px;
+  background-image: url(../img/fon.png);
+  background-size: cover;
+  background-position: center; }
+  body header .container {
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 5px; }
+    body header .container nav {
+      max-width: 1170px;
+      height: 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed; }
+      body header .container nav a {
+        text-decoration: none;
+        color: white; }
+        body header .container nav a:hover {
+          color: #098ef9; }
+      body header .container nav ul {
+        width: 600px;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0; }
+        body header .container nav ul li {
+          padding: 5px 10px; }
+      body header .container nav .navbar_logo {
+        font-size: 30px; }
+      body header .container nav .navbar_phone_me {
+        color: white;
+        text-align: center; }
+        body header .container nav .navbar_phone_me h4 {
+          margin: 2px; }
+        body header .container nav .navbar_phone_me button {
+          border-radius: 20px;
+          padding: 10px 10px;
+          color: white;
+          background-color: transparent;
+          border: 2px solid white; }
+          body header .container nav .navbar_phone_me button:hover {
+            border-color: #098ef9;
+            box-shadow: 0 0 1px 2px #098ef9; }
