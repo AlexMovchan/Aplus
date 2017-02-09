@@ -1,0 +1,22 @@
+@import "reset";
+@import "variables";
+@import "mixin";
+@import "button";
+@import "wrapper";
+@import "nav";
+@import "home";
+@import "sectionTitle";
+@import "smm";
+@import "socialPower";
+
+.active {
+	opacity: 1 !important;
+}
+.owl-carousel { 
+	.owl-item {
+    	opacity: 0.15;
+	}
+}
+
+
+

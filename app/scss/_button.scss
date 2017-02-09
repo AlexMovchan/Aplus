@@ -1,0 +1,40 @@
+.button {
+	display: block;	
+	border:{
+		radius: 20px;
+		width: 2px;
+		style: solid;
+		color: $baseGreen;
+	}
+	padding: 10px;
+	color: white;
+	background:{
+		color: $baseGreen;			
+	}
+	&:hover {						
+		border:{
+			color: white;;
+		}
+	}
+	&-transpar {
+		background:{
+			color: transparent;			
+		}
+		border:{
+			color: white;
+		}
+		&:hover{
+			border:{
+				color: $baseGreen;
+			}
+		}
+	}
+	&-shadow{
+		box-shadow: 0 0 50px 10px $baseGreen;
+		&:hover {
+			box-shadow: 0 0 50px 10px white;
+		}
+	}
+
+
+}

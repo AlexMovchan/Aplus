@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var webserver = require('gulp-webserver');
+var sass = require('gulp-sass');
  
 gulp.task('webserver', function() {
   gulp.src('app')
@@ -11,14 +12,13 @@ gulp.task('webserver', function() {
 
 'use strict';
  
-var sass = require('gulp-sass');
  
 gulp.task('sass', function () {
-  return gulp.src('app/sass/main.sass')
+  return gulp.src('app/scss/main.scss')
     .pipe(sass())
     .pipe(gulp.dest('app/css'));
 });
  
 gulp.task('watch', ['webserver', 'sass'], function () {
-  gulp.watch('app/**/*.sass', ['sass']);
+  gulp.watch('app/**/*.scss', ['sass']);
 });

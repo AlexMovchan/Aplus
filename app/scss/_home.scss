@@ -1,0 +1,36 @@
+.home {
+	height: 620px;
+	background:{
+		image: url(../img/fon.png);
+		size: cover;
+		position: center;
+	}
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	&__info {
+		margin: auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: center;
+		&-title {
+			width: 100%;
+			color: white;
+			font: {
+				size: 50px
+			}
+			text: {
+				align: left;
+			}
+			margin: 0 0 20px;
+		}
+			&--small {
+				width: 100%;
+				font: {
+					size: 40px
+				}
+			}
+	}
+}	

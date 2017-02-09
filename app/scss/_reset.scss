@@ -1,0 +1,32 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+div,
+map,
+dt,
+form,
+header,
+nav,
+article,
+footer,
+address {
+    display: block
+}
+
+html,
+body  {
+    position: relative;
+}
+
+
+a {
+    text: {
+	    decoration: none;
+    }
+}
+
+li {
+    list-style: none;}

@@ -1,0 +1,19 @@
+.wrapper {
+	width: 1170px;
+	margin: 0 auto;
+	padding: 0 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	@include respond-to(tablets) {
+		width: 100%;
+	}
+	&-wrap {
+		flex-flow: row wrap;
+	}
+	&-background{
+		background-image: url(../img/smm.png);
+		background-size: cover;
+		background-position: center; 
+	}
+}
