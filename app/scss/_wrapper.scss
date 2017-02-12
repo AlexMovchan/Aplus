@@ -1,5 +1,6 @@
 .wrapper {
 	width: 1170px;
+	height: inherit;
 	margin: 0 auto;
 	padding: 0 5px;
 	display: flex;
@@ -15,5 +16,10 @@
 		background-image: url(../img/smm.png);
 		background-size: cover;
 		background-position: center; 
+	}
+	&__container{
+		margin: auto;
+		position: relative;
+		width: 100%;
 	}
 }

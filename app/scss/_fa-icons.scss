@@ -1,0 +1,17 @@
+
+.iconSocial{
+	transition: 0.4s;
+	padding: 10px;
+	border-radius: 10px;
+	&:hover{
+		transform: scale(1.3);
+		transition: 0.4s;
+		color: white;
+		background-color: #2D7CFA;
+	}
+}
+.socialPages__icons-uncolorLink {
+	&:hover .socialPages__icons-uncolorLink-hiddenPar{
+		display: block;
+	}
+}

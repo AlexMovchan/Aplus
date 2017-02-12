@@ -1,17 +1,13 @@
-$('.owl-carousel').owlCarousel({
-    stagePadding: 200,
-    loop:true,
-    margin:25,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:1
-        }
-    }
-})
+ var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        slidesPerView: 2,
+        centeredSlides: true,
+        paginationClickable: true,
+        spaceBetween: 30,
+        grabCursor: true,
+        loop: true,
+        parallax: true,
+        nextButton: '.swiper-button-next',
+   		prevButton: '.swiper-button-prev'
+    });
+

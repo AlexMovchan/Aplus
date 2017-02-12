@@ -1,22 +1,25 @@
 .button {
 	display: block;	
+	cursor: pointer;
+	outline: none;
 	border:{
 		radius: 20px;
 		width: 2px;
 		style: solid;
 		color: $baseGreen;
 	}
-	padding: 10px;
+	margin: 5px;
+	padding: 10px 20px;
 	color: white;
 	background:{
 		color: $baseGreen;			
 	}
 	&:hover {						
 		border:{
-			color: white;;
+			color: black;
 		}
 	}
-	&-transpar {
+	&--transpar {
 		background:{
 			color: transparent;			
 		}
@@ -29,11 +32,14 @@
 			}
 		}
 	}
-	&-shadow{
+	&--shadow{
 		box-shadow: 0 0 50px 10px $baseGreen;
 		&:hover {
 			box-shadow: 0 0 50px 10px white;
 		}
+	}
+	&--center{
+		margin: auto;
 	}
 
 

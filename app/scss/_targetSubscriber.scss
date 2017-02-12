@@ -1,0 +1,10 @@
+.targetSubscriber {
+	background-image: url(../img/robot.png);
+	background-position: center;
+	background-size: cover;
+	height: 420px;
+	&__info {
+		width: 100%;
+		line-height: 20px;
+	}
+}

@@ -8,15 +8,53 @@
 @import "sectionTitle";
 @import "smm";
 @import "socialPower";
+@import "product";
+@import "popular";
+@import "subscriber";
+@import "development";
+@import "targetSubscriber";
+@import "business";
+@import "socialPages";
+@import "fa-icons";
 
-.active {
-	opacity: 1 !important;
-}
-.owl-carousel { 
-	.owl-item {
-    	opacity: 0.15;
+
+
+
+.swiper-slide-prev {
+	opacity: 0.2;
+	transition: 1s;
+	overflow: hidden;
+	&:after {
+		background: transparent;
+	    background: linear-gradient(to right, rgba(255, 255, 255, 1) 45%, rgba(255,0,0,0) 100% );
+	    content: "";
+		display: block;
+	    height: 100%;
+	    left: 0;
+	    position: absolute;
+	    top: 0;
+	    width: 100%;
 	}
 }
 
+.swiper-slide-next {
+	opacity: 0.2;
+	transition: 1s;
+	overflow: hidden;
+	&:after {
+		background: transparent;
+	    background: linear-gradient(to left, rgba(255, 255, 255, 1) 45%, rgba(255,0,0,0) 100% );
+	    content: "";
+		display: block;
+	    height: 100%;
+	    left: 0;
+	    position: absolute;
+	    top: 0;
+	    width: 100%;
+	}
+}
 
+.swiper-container {
+	overflow: visible;
 
+}
