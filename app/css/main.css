@@ -164,11 +164,17 @@ li {
   .sectionTitle--small {
     font-size: 18px;
     margin: 5px 0; }
+    @media only screen and (max-width: 768px) {
+      .sectionTitle--small {
+        font-size: 14px; } }
   .sectionTitle--white {
     color: white; }
 
 .smm {
   padding: 40px 0; }
+  @media only screen and (max-width: 768px) {
+    .smm {
+      padding: 10px 0; } }
   .smm__header {
     width: 100%;
     margin: 20px 0; }
@@ -180,6 +186,7 @@ li {
     margin: 40px 0; }
     @media only screen and (max-width: 768px) {
       .smm__content {
+        margin: 20px 0;
         text-align: center; } }
     .smm__content-item {
       width: 23%; }
@@ -207,6 +214,9 @@ li {
 
 .product {
   padding: 40px 0; }
+  @media only screen and (max-width: 768px) {
+    .product {
+      padding: 0; } }
   .product__header {
     width: 60%;
     margin: 15px auto;
@@ -226,6 +236,10 @@ li {
         display: flex;
         justify-content: center;
         align-items: center; }
+        @media only screen and (max-width: 768px) {
+          .product__slider__item-social {
+            top: -20px;
+            left: 15px; } }
         .product__slider__item-social--vk {
           background-image: url(../img/vk.png);
           background-position: center;
@@ -234,6 +248,10 @@ li {
           width: 70px;
           height: 40px;
           margin: 3px; }
+          @media only screen and (max-width: 768px) {
+            .product__slider__item-social--vk {
+              width: 45px;
+              height: 25px; } }
         .product__slider__item-social--facebook {
           background-image: url(../img/facebook.png);
           background-position: center;
@@ -242,6 +260,10 @@ li {
           width: 50px;
           height: 50px;
           margin: 3px; }
+          @media only screen and (max-width: 768px) {
+            .product__slider__item-social--facebook {
+              width: 30px;
+              height: 30px; } }
         .product__slider__item-social--instagram {
           background-image: url(../img/instagram.png);
           background-position: center;
@@ -250,10 +272,18 @@ li {
           width: 50px;
           height: 50px;
           margin: 3px; }
+          @media only screen and (max-width: 768px) {
+            .product__slider__item-social--instagram {
+              width: 30px;
+              height: 30px; } }
       .product__slider__item-content {
         position: absolute;
         top: 70px;
         left: 30px; }
+        @media only screen and (max-width: 768px) {
+          .product__slider__item-content {
+            top: 30px;
+            left: 10px; } }
       .product__slider__item-picture {
         position: absolute;
         left: 279px;
@@ -407,6 +437,7 @@ li {
     justify-content: space-between; }
     @media only screen and (max-width: 768px) {
       .socialPages__icons {
+        padding: 35px 0;
         flex-flow: row wrap;
         justify-content: center; } }
     .socialPages__icons-uncolorLink {

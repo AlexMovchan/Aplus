@@ -1,5 +1,8 @@
 .smm {
 	padding: 40px 0;
+	@include respond-to(mobile){
+		padding: 10px 0;
+	}
 	&__header {
 		width: 100%;
 		margin: 20px 0;
@@ -11,6 +14,7 @@
 		justify-content: space-around;
 		margin: 40px 0;
 		@include respond-to(mobile){
+			margin: 20px 0;
 			text-align: center;
 		}
 		&-item {
