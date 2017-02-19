@@ -3,6 +3,9 @@
 	background-position: center;
 	background-size: cover;
 	height: 420px;
+	@include respond-to(mobile){
+		background: transparent;
+	}
 	&__info {
 		width: 100%;
 		line-height: 20px;

@@ -35,6 +35,9 @@
 	    top: 0;
 	    width: 100%;
 	}
+	@include respond-to(mobile){
+		display: none;
+	}
 }
 
 .swiper-slide-next {
@@ -52,9 +55,27 @@
 	    top: 0;
 	    width: 100%;
 	}
+	@include respond-to(mobile){
+		display: none;
+	}
 }
 
 .swiper-container {
 	overflow: visible;
 
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+	@include respond-to(mobile){
+		display: none;
+	}
+}
+
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+	@include respond-to(mobile){
+		display: none;
+	}
 }

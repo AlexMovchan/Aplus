@@ -25,6 +25,9 @@
 				align: left;
 			}
 			margin: 0 0 20px;
+			@include respond-to(mobile){
+				text-align: center;
+			}
 		}
 			&--small {
 				width: 100%;

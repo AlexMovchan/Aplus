@@ -10,8 +10,15 @@
 		flex-flow: row wrap;
 		justify-content: space-around;
 		margin: 40px 0;
+		@include respond-to(mobile){
+			text-align: center;
+		}
 		&-item {
 			width: 23%;
+			@include respond-to(mobile){
+				width: 100%;
+				padding: 5px 0;
+			}
 			img{
 				width: 35px;
 				height: 35px;

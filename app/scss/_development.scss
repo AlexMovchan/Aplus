@@ -10,8 +10,18 @@
 		justify-content: space-between;
 		align-items: center;
 		color: white;
+		@include respond-to(mobile) {
+			flex-flow: row wrap;
+			justify-content: center;
+		}
 		&-item{
 			margin: 10px;
+			@include respond-to(mobile) {
+				width: 40%;
+			}
+			&--center{
+				text-align: center;
+			}
 			&-picture{
 				width: 40px;
 				height: 50px;

@@ -1,7 +1,14 @@
 .subscriber {
 	height: 700px;	
+	@include respond-to(mobile) {
+		height: 400px;
+	}
 	&__video {
 		margin: 30px auto;
 		width: 770px;
+		@include respond-to(mobile) {
+			width: 100%;
+			overflow: hidden;
+		}
 	}
 }

@@ -1,13 +1,24 @@
 .socialPages {
 	height: 500px;
+	@include respond-to(mobile){
+		height: 400px;
+	}
 	&__icons {
 		padding: 70px 0;
 		display: flex;
 		width: 100%;
 		justify-content: space-between;
+		@include respond-to(mobile){
+			flex-flow: row wrap;
+			justify-content: center;
+		}
 		&-uncolorLink{
 			text-decoration: none;
 			color: inherit;
+			@include respond-to(mobile){
+				text-align: center;
+				width: 33%;
+			}
 		}
 	}
 }

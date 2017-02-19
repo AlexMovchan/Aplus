@@ -6,6 +6,9 @@
 	margin: 20px 0;
 	&--alignLeft{
 		text-align: left;
+		@include respond-to(mobile){
+			text-align: center;
+		}
 	}
 	&--small {
 		font-size: 18px;

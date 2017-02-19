@@ -6,7 +6,11 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	overflow: hidden;
 	@include respond-to(tablets) {
+		width: 100%;
+	}
+	@include respond-to(mobile) {
 		width: 100%;
 	}
 	&-wrap {

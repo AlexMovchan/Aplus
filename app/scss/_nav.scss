@@ -3,6 +3,14 @@
 	height: 70px;
 	position: fixed;
 	z-index: 100;
+	background-color: black;
+	.burgerIcon{
+		display: none;
+		@include respond-to(mobile){
+			display: block;
+		}
+
+	}
 	&__logo {
 		font:{
 			size: 30px;			
@@ -17,7 +25,17 @@
 	&__list {
 		width: 500px;			
 		display: flex;
-		justify-content: space-between;				
+		justify-content: space-between;	
+		@include respond-to(mobile) {
+			width: 100%;
+			display: none;
+			position: absolute;
+			text-align: center;
+			left: 0;
+			top: 70px;
+			background-color: black;
+
+		}			
 		&-item{
 			padding: 5px 10px;	
 		}

@@ -37,6 +37,9 @@
 		&:hover {
 			box-shadow: 0 0 50px 10px white;
 		}
+		@include respond-to(mobile){
+			margin: auto;
+		}
 	}
 	&--center{
 		margin: auto;
